@@ -61,6 +61,34 @@ ul li {
     color: #333; /* Texto oscuro */
 }
 
+ol {
+    list-style-type: none; /* Elimina los números predeterminados */
+    padding-left: 0; /* Elimina el relleno izquierdo predeterminado */
+    counter-reset: list-counter; /* Resetea el contador */
+}
+
+ol li {
+    counter-increment: list-counter; /* Incrementa el contador */
+    margin-bottom: 10px;
+    padding: 10px;
+    border-radius: 4px;
+    border: 1px solid #b5651d; /* Borde marrón */
+    background-color: #fff; /* Fondo blanco para los elementos */
+    color: #333; /* Texto oscuro */
+    position: relative; /* Posiciona el número en relación con el elemento */
+    padding-left: 30px; /* Espacio para el número */
+}
+
+ol li::before {
+    content: counter(list-counter) ". "; /* Muestra el número antes del texto */
+    position: absolute;
+    left: 10px; /* Espacio a la izquierda del elemento */
+    top: 50%;
+    transform: translateY(-50%); /* Centra verticalmente */
+    font-weight: bold; /* Negrita para el número */
+    color: #b5651d; /* Color marrón para el número */
+}
+
 /* Images */
 .profile-pic {
     width: 120px; /* Tamaño mediano */
