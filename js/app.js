@@ -24,7 +24,7 @@ const respuestas = [
 let respuestasIncorrectas = 0;
 let respuestasCorrectas = 0;
 
-// Primeras 5 preguntas son de sí/no
+
 for (let i = 0; i < preguntas.length; i++) {
     if (i < 5) { 
         let respuestaUsuario = prompt(preguntas[i]).toLowerCase();

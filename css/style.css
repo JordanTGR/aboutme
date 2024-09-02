@@ -1,17 +1,17 @@
-/* General Styles */
+
 body {
     font-family: 'Helvetica Neue', Arial, sans-serif;
-    background-color: #f4f4f4; /* Fondo gris claro */
-    color: #333; /* Texto oscuro */
+    background-color: #f4f4f4; 
+    color: #333; 
     margin: 0;
     padding: 0;
     line-height: 1.6;
 }
 
-/* Sticky Header */
+
 header {
-    background-color: #333; /* Fondo gris oscuro */
-    color: #f4f4f4; /* Texto blanco */
+    background-color: #333; 
+    color: #f4f4f4; 
     padding: 15px 0;
     text-align: center;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
@@ -22,104 +22,103 @@ header {
 
 h1 {
     margin: 0;
-    font-size: 2.5em; /* Tamaño grande */
+    font-size: 2.5em; 
 }
 
-/* Main Content */
+
 main {
     max-width: 800px;
     margin: 20px auto;
-    background-color: #fff; /* Fondo blanco */
+    background-color: #fff; 
     padding: 20px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     border-radius: 8px;
-    border: 1px solid #ccc; /* Borde gris claro */
+    border: 1px solid #ccc; 
 }
 
-/* Section Titles */
+
 h2 {
-    border-bottom: 2px solid #b5651d; /* Línea marrón */
+    border-bottom: 2px solid #b5651d; 
     padding-bottom: 10px;
     margin-bottom: 20px;
-    color: #333; /* Texto oscuro */
-    font-weight: bold; /* Negrita */
-    font-size: 1.8em; /* Tamaño grande */
+    color: #333; 
+    font-weight: bold; 
+    font-size: 1.8em; 
 }
 
-/* Lists */
+
 ul {
     list-style-type: none;
     padding: 0;
 }
 
 ul li {
-    background: #d9d9d9; /* Fondo gris claro */
+    background: #d9d9d9; 
     margin-bottom: 10px;
     padding: 10px;
     border-radius: 4px;
-    border: 1px solid #b5651d; /* Borde marrón */
-    color: #333; /* Texto oscuro */
+    border: 1px solid #b5651d; 
+    color: #333; 
 }
 
 ol {
-    list-style-type: none; /* Elimina los números predeterminados */
-    padding-left: 0; /* Elimina el relleno izquierdo predeterminado */
-    counter-reset: list-counter; /* Resetea el contador */
+    list-style-type: none; 
+    padding-left: 0; 
+    counter-reset: list-counter; 
 }
 
 ol li {
-    counter-increment: list-counter; /* Incrementa el contador */
+    counter-increment: list-counter; 
     margin-bottom: 10px;
     padding: 10px;
     border-radius: 4px;
-    border: 1px solid #b5651d; /* Borde marrón */
-    background-color: #fff; /* Fondo blanco para los elementos */
-    color: #333; /* Texto oscuro */
-    position: relative; /* Posiciona el número en relación con el elemento */
-    padding-left: 30px; /* Espacio para el número */
+    border: 1px solid #b5651d; 
+    background-color: #fff; 
+    color: #333; 
+    position: relative;
+    padding-left: 30px; 
 }
 
 ol li::before {
-    content: counter(list-counter) ". "; /* Muestra el número antes del texto */
+    content: counter(list-counter) ". "; 
     position: absolute;
-    left: 10px; /* Espacio a la izquierda del elemento */
+    left: 10px;
     top: 50%;
-    transform: translateY(-50%); /* Centra verticalmente */
-    font-weight: bold; /* Negrita para el número */
-    color: #b5651d; /* Color marrón para el número */
+    transform: translateY(-50%); 
+    font-weight: bold; 
+    color: #b5651d; 
 }
 
-/* Images */
 .profile-pic {
-    width: 120px; /* Tamaño mediano */
+    width: 120px;
     height: 120px;
-    border-radius: 50%; /* Hace la imagen redonda */
+    border-radius: 50%; 
     object-fit: cover;
     margin-bottom: 20px;
     display: block;
     margin-left: auto;
     margin-right: auto;
-    border: 3px solid #b5651d; /* Borde marrón */
-    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2); /* Sombra para profundidad */
+    border: 3px solid #b5651d; 
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2); 
 }
 
 .experience-pic {
-    width: 100%; /* Ajusta al ancho del contenedor */
-    max-width: 600px; /* Tamaño máximo mediano */
+    width: 100%; 
+    max-width: 600px; 
     height: auto;
     border-radius: 8px;
     object-fit: cover;
     margin-bottom: 20px;
-    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2); /* Sombra para profundidad */
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
 }
 
-/* Sticky Footer */
+
 footer {
     text-align: center;
     padding: 15px;
-    background-color: #333; /* Fondo gris oscuro */
-    color: #f4f4f4; /* Texto blanco */
-    border-top: 1px solid #b5651d; /* Línea marrón arriba */
+    background-color: #333; 
+    color: #f4f4f4;
+    border-top: 1px solid #b5651d; 
     position: sticky;
     bottom: 0;
     width: 100%;
@@ -128,24 +127,24 @@ footer {
 
 footer p {
     margin: 0;
-    font-size: 1.2em; /* Tamaño grande para el pie de página */
-    font-weight: bold; /* Negrita */
+    font-size: 1.2em; 
+    font-weight: bold; 
 }
 
-/* Paragraphs */
+
 p {
     margin-bottom: 20px;
 }
 
-/* FontAwesome Icons */
+
 .fas {
-    color: #b5651d; /* Marrón para iconos */
+    color: #b5651d;
     margin-right: 5px;
 }
 
-/* Links */
+
 a {
-    color: #b5651d; /* Marrón para enlaces */
+    color: #b5651d;
     text-decoration: none;
 }
 
